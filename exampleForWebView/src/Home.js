@@ -3,7 +3,7 @@ import WebView from 'react-native-webview';
 import queryString from 'query-string';
 
 function Home({ navigation }) {
-  const domain = 'http://192.168.0.15:3000';
+  const domain = 'http://www.kakaopay.com.s3-website.ap-northeast-2.amazonaws.com/';
   const [uri, setUri] = useState(domain);
 
   useEffect(() => {
