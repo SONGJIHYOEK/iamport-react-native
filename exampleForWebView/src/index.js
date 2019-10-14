@@ -6,9 +6,9 @@ import Payment from './PaymentAsClass';
 import Certification from './Certification';
 
 const AppNavigator = createStackNavigator({
-  Home: {
-    screen: Home,
-  },
+  // Home: {
+  //   screen: Home,
+  // },
   Payment: {
     screen: Payment,
   },

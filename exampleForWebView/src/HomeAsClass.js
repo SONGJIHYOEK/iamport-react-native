@@ -40,7 +40,6 @@ class HomeClass extends Component {
   }
 
   render(){
-
     return (
       <WebView
         source={{uri: this.state.uri}} 

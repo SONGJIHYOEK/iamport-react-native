@@ -35,8 +35,22 @@ class PaymentClass extends Component {
   }
   render(){
     const navigation = this.props.navigation
-    const userCode = navigation.getParam('userCode');
-    const data = navigation.getParam('data');
+    // const userCode = navigation.getParam('userCode');
+    const userCode = 'imp23274934';
+    const data = {
+      pg: 'kakaopay',
+      pay_method: 'card',
+      name: '아임포트 결제데이터 분석',
+      merchant_uid: `mid_${new Date().getTime()}`,
+      amount: '39000',
+      buyer_name: '홍길동',
+      buyer_tel: '01012345678',
+      buyer_email: 'example@naver.com',
+      buyer_addr: '서울시 강남구 신사동 661-16',
+      buyer_postcode: '06018',
+      app_scheme: 'example',
+      // [Deprecated v1.0.3]: m_redirect_url
+    };
     return (
       <IMP.Payment
         userCode={userCode}
